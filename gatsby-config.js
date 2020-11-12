@@ -2,6 +2,7 @@ const urljoin = require("url-join");
 const config = require("./data/SiteConfig");
 
 module.exports = {
+  pathPrefix: "/paphie14.github.io",
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
     siteUrl: urljoin(config.siteUrl, config.pathPrefix),
